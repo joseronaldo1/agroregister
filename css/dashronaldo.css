@@ -1,0 +1,73 @@
+/* Estilos generales */
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #424242;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos del panel de control */
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .widget {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Estilos del menú lateral */
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            padding-top: 150px;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Estilos del contenido principal */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
