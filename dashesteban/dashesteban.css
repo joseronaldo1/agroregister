@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+.logo {
+    width: 130px;
+    padding-left: 1760px;
+    padding-bottom: 300px;
+  }
+  .logo-2 {
+    width: 100%;
+  }
+
+.titulo {
+    text-align: center;
+    background-color: rgb(255, 49, 49);
+    color: #fff;
+    height: 84px;
+    padding: 20px;
+    font-size: 1.8em;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding-top: 50px;
+    display: grid;
+    grid-template: "empty-left main-form empty-right" / 
+                    1fr         800px   1fr;
+}
+.main-form {
+    grid-area: main-form;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: fit-content;
+}
+nav {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    width: 92px; /* Ancho inicial del menú */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: width 0.3s ease;
+    border: 2px solid #ffffff9a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para el color de fondo y el color del texto */
+}
+
+/* Estilo para la opción de menú seleccionada */
+nav ul li a.selected {
+    background-color: #ffffff85; /* Cambia el color de fondo cuando está seleccionado */
+    color: #fff; /* Cambia el color del texto cuando está seleccionado */
+    border-radius: 10px;
+}
+
+/* Estilo para el hover (paso del mouse) */
+nav ul li a:hover {
+    background-color: #ffffff85; /* Cambia el color de fondo cuando se pasa el mouse por encima */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse por encima */
+    border-radius: 10px;
+}
+
+.menu-expanded {
+    width: 200px; /* Ancho expandido del menú */
+}
+
+.raya {
+    background-color: #fff;
+    height: 1px;
+    margin: 5px 0;
+}
