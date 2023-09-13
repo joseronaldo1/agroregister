@@ -56,10 +56,10 @@ a{
 }
 .main-content{
     grid-area: main-content;
-    padding-top: 50px ;
+    padding-top: 40px ;
     display: grid;
     grid-template: "empty-left mi-form empty-right" /
-                        1fr      1000px    1fr;
+                        1fr      900px    1fr;
     
 }
 .mi-form{
@@ -73,14 +73,15 @@ a{
 }
 input[type="text"]{
     width: 450px;
-    height: 60px;
+    height: 50px;
+    background-color: rgb(219, 219, 219);
     border: 1px solid rgb(148, 148, 148);
 }
 .box-input{
     margin-top: 70px;
 }
 input[type="text"]{
-    width: 450px;
+    width: 425px;
     height: 60px;
     border: rgb(96,96,96.9);
     margin-top: 15px;
