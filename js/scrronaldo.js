@@ -1,0 +1,1 @@
+let miVariable = 0;
